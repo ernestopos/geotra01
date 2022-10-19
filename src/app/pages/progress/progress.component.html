@@ -1,0 +1,84 @@
+<!--div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Striped Progress bar</h4>
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-warning active progress-bar-striped" aria-valuenow="55"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 85%; height:10px;" role="progressbar"> <span
+                            class="sr-only">85% Complete (success)</span> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div-->
+
+<!-- ============================================================== -->
+<!-- Start Page Content -->
+<!-- ============================================================== -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Registro información de Parámetros</h4>
+                <form class="form-material m-t-40">
+                    <div class="form-group">
+                        <label>Tipo de Identificación</label>
+                        <select class="custom-select col-12" id="inlineFormCustomSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">CC - Cédula Ciudadanía</option>
+                            <option value="2">CE - Cédula Extranjería</option>
+                            <option value="3">NIP - Número Identificación Personal</option>
+                            <option value="4">NIT - Número Identificación Tributaria</option>
+                            <option value="5">TI - Tarjeta de Identidad</option>
+                            <option value="6">PAP - Pasaporte</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ingrese el número de la Identificación">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ingrese el nombre o razón social">
+                    </div>
+                    <div class="form-group">
+                        <label>Tipo de Usuario</label>
+                        <select class="custom-select col-12" id="inlineFormCustomSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">CLI - Cliente</option>
+                            <option value="2">LDE - Usuario LADEE</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="example-email2" name="example-email" class="form-control"
+                            placeholder="Ingrese el correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ingrese el número de contacto">
+                    </div>
+                    <div class="form-group">
+                        <label>Departamento</label>
+                        <select class="custom-select col-12" id="inlineFormCustomSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">BOG - Bogotá</option>
+                            <option value="2">ATL - Atlántico</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Departamento</label>
+                        <select class="custom-select col-12" id="inlineFormCustomSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">BOG - Bogotá</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ingrese la dirección">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" value="password">
+                    </div>   
+                    <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Guardar</button>
+                    <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancelar</button>
+                </form>
+            </div>
+        </div>
