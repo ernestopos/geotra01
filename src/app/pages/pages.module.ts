@@ -7,6 +7,14 @@ import { ProgressComponent } from './progress/progress.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { ParametrosComponent } from './parametros/parametros.component';
+import { RolesusuariosComponent } from './rolesusuarios/rolesusuarios.component';
+import { EquiposComponent } from './equipos/equipos.component';
+import { ClientesComponent } from './clientes/clientes.component';
+import { SolicitudespcbComponent } from './solicitudespcb/solicitudespcb.component';
+import { CargarinsumopcbComponent } from './cargarinsumopcb/cargarinsumopcb.component';
+import { GenerarreportepcbComponent } from './generarreportepcb/generarreportepcb.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +22,15 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     ProgressComponent,
     GraficalComponent,
     PagesComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    UsuariosComponent,
+    ParametrosComponent,
+    RolesusuariosComponent,
+    EquiposComponent,
+    ClientesComponent,
+    SolicitudespcbComponent,
+    CargarinsumopcbComponent,
+    GenerarreportepcbComponent
   ],
   exports: [
     DashboardComponent,
