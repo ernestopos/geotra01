@@ -37,7 +37,16 @@ import { GenerarreportepcbComponent } from './generarreportepcb/generarreportepc
     ProgressComponent,
     GraficalComponent,
     PagesComponent,
-    AppRoutingModule
+    AppRoutingModule,
+    AccountSettingsComponent,
+    UsuariosComponent,
+    ParametrosComponent,
+    RolesusuariosComponent,
+    EquiposComponent,
+    ClientesComponent,
+    SolicitudespcbComponent,
+    CargarinsumopcbComponent,
+    GenerarreportepcbComponent
   ],
   imports: [
     CommonModule,
