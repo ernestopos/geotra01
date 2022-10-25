@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ProgressComponent } from './progress/progress.component';
-import { GraficalComponent } from './grafical/grafical.component';
 import { PagesComponent } from './pages.component';
-import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { CargarinsumopcbComponent } from './cargarinsumopcb/cargarinsumopcb.component';
+import { ClientesComponent } from './clientes/clientes.component';
+import { EquiposComponent } from './equipos/equipos.component'
+import { GenerarreportepcbComponent } from './generarreportepcb/generarreportepcb.component';
+import { ParametrosComponent } from './parametros/parametros.component';
+import { RolesusuariosComponent } from './rolesusuarios/rolesusuarios.component';
+import { SolicitudespcbComponent } from './solicitudespcb/solicitudespcb.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
 
 const routes: Routes = [
   {
@@ -13,9 +17,14 @@ const routes: Routes = [
     component: PagesComponent,
     children: [
       { path: '', component: DashboardComponent },
-      { path: 'progress', component: ProgressComponent },
-      { path: 'grafical', component: GraficalComponent },
-      { path: 'account-settings', component: AccountSettingsComponent }      
+      { path: 'cargarinsumopcb', component: CargarinsumopcbComponent },
+      { path: 'clientes', component: ClientesComponent },
+      { path: 'equipos', component: EquiposComponent },
+      { path: 'generarreportepcb', component: GenerarreportepcbComponent },
+      { path: 'parametros', component: ParametrosComponent },
+      { path: 'rolesusuarios', component: RolesusuariosComponent },
+      { path: 'solicitudespcb', component: SolicitudespcbComponent },
+      { path: 'usuarios', component: UsuariosComponent },
     ]
   }
 ]
