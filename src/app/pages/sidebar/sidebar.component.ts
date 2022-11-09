@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { GlobalVariables } from '../../global-variables';
+import { UsuariosService } from '../../services/usuarios.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -12,13 +11,14 @@ export class SidebarComponent implements OnInit {
 
   countMenus: number = 0;
 
-  constructor() {
-
+  constructor(private usuario: UsuariosService) {
   }
 
   ngOnInit(): void {
-    let numero = GlobalVariables.enabledMenus();
+    let numero = this.usuario.enabledMenus();
+    this.usuario.apiConsumer();
     this.countMenus = numero;
+    console.log("Estos son los items cargados desde sidebar " + this.countMenus );
   }
 
 }
