@@ -1,22 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { GlobalVariables } from '../global-variables';
+import { UsuariosService } from '../services/usuarios.service';
 
+//declare function preloadFunction(): any;
 @Component({
   selector: 'app-pages',
   templateUrl: './pages.component.html',
-  styles: [
-  ]
+  styles: [],
 })
 export class PagesComponent implements OnInit {
+  
+  constructor(private usuario: UsuariosService) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-    this.setCountNumbers();
+  ngOnInit(): void {    
+    this.usuario.setCountNumbers(200);
+    console.log("ngOnInit Pages Component" + this.usuario.enabledMenus());
+    //preloadFunction();
   }
-
-  setCountNumbers(): void {
-    GlobalVariables.setCountNumbers(200);
-  }
-
 }
