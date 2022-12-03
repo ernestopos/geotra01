@@ -16,15 +16,15 @@ const routes: Routes = [
     path: 'dashboard', 
     component: PagesComponent,
     children: [
-      { path: '', component: DashboardComponent },
-      { path: 'cargarinsumopcb', component: CargarinsumopcbComponent },
-      { path: 'clientes', component: ClientesComponent },
-      { path: 'equipos', component: EquiposComponent },
-      { path: 'generarreportepcb', component: GenerarreportepcbComponent },
-      { path: 'parametros', component: ParametrosComponent },
-      { path: 'rolesusuarios', component: RolesusuariosComponent },
-      { path: 'solicitudespcb', component: SolicitudespcbComponent },
-      { path: 'usuarios', component: UsuariosComponent },
+      { path: '', component: DashboardComponent, data : { titulo : 'dashboard' } },
+      { path: 'cargarinsumopcb', component: CargarinsumopcbComponent, data : { titulo : 'cargarinsumopcb' } },
+      { path: 'clientes', component: ClientesComponent, data : { titulo : 'clientes' } },
+      { path: 'equipos', component: EquiposComponent, data : { titulo : 'equipos' }},
+      { path: 'generarreportepcb', component: GenerarreportepcbComponent, data : { titulo : 'generarreportepcb' }},
+      { path: 'parametros', component: ParametrosComponent, data : { titulo : 'parametros' }},
+      { path: 'rolesusuarios', component: RolesusuariosComponent, data : { titulo : 'rolesusuarios' }},
+      { path: 'solicitudespcb', component: SolicitudespcbComponent, data : { titulo : 'solicitudespcb' }},
+      { path: 'usuarios', component: UsuariosComponent, data : { titulo : 'usuarios' }},
     ]
   }
 ]

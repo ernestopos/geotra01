@@ -16,17 +16,18 @@ export class SidebarComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    let numero = this.usuario.enabledMenus();
-    this.usuario.apiConsumer();
+    let numero = this.usuario.enabledMenus();    
     this.countMenus = numero;
+    /*
+    this.usuario.apiConsumer();
     this.apirestconnecservice.getUsuario().then((respuesta) => {
       console.log(respuesta);
     });
-    this.prueba();
+    this.prueba();*/
   }
 
   public prueba(): void {
-    var url = window.location;
-    console.log("esta es la url: " + url);    
+    /*var url = window.location;
+    console.log("esta es la url: " + url);*/
   }
 }

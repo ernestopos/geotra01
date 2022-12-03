@@ -8,7 +8,7 @@ export class ApiRestConnectService {
   private url: string = 'https://reqres.in/api/users?page=2';
 
   constructor() {
-    const obs$ = new Observable((observer) => {
+    /*const obs$ = new Observable((observer) => {
       let i = 0;
       const invervalo = setInterval(() => {
         i++;
@@ -19,7 +19,7 @@ export class ApiRestConnectService {
         }
       }, 1000);
     });
-    obs$.subscribe((valor) => console.log('Subs:', valor));
+    obs$.subscribe((valor) => console.log('Subs:', valor));*/
   }
 
   getUsuario() {
