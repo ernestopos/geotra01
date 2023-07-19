@@ -15,6 +15,7 @@ import { ClientesComponent } from './clientes/clientes.component';
 import { SolicitudespcbComponent } from './solicitudespcb/solicitudespcb.component';
 import { CargarinsumopcbComponent } from './cargarinsumopcb/cargarinsumopcb.component';
 import { GenerarreportepcbComponent } from './generarreportepcb/generarreportepcb.component';
+import { RxjsComponent } from './rjxs/rjxs.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { GenerarreportepcbComponent } from './generarreportepcb/generarreportepc
     ClientesComponent,
     SolicitudespcbComponent,
     CargarinsumopcbComponent,
-    GenerarreportepcbComponent
+    GenerarreportepcbComponent,
+    RxjsComponent
   ],
   exports: [
     DashboardComponent,
@@ -46,7 +48,8 @@ import { GenerarreportepcbComponent } from './generarreportepcb/generarreportepc
     ClientesComponent,
     SolicitudespcbComponent,
     CargarinsumopcbComponent,
-    GenerarreportepcbComponent
+    GenerarreportepcbComponent,
+    RxjsComponent
   ],
   imports: [
     CommonModule,

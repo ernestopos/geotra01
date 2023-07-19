@@ -10,6 +10,7 @@ import { ParametrosComponent } from './parametros/parametros.component';
 import { RolesusuariosComponent } from './rolesusuarios/rolesusuarios.component';
 import { SolicitudespcbComponent } from './solicitudespcb/solicitudespcb.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
+import { RxjsComponent } from './rjxs/rjxs.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,7 @@ const routes: Routes = [
       { path: 'rolesusuarios', component: RolesusuariosComponent, data : { titulo : 'rolesusuarios' }},
       { path: 'solicitudespcb', component: SolicitudespcbComponent, data : { titulo : 'solicitudespcb' }},
       { path: 'usuarios', component: UsuariosComponent, data : { titulo : 'usuarios' }},
+      { path: 'rxjs', component: RxjsComponent, data : { titulo : 'rxjs' }}
     ]
   }
 ]
