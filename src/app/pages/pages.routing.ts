@@ -11,11 +11,13 @@ import { RolesusuariosComponent } from './rolesusuarios/rolesusuarios.component'
 import { SolicitudespcbComponent } from './solicitudespcb/solicitudespcb.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { RxjsComponent } from './rjxs/rjxs.component';
+import { AuthGuard } from '../guards/auth.guard';
 
 const routes: Routes = [
   {
     path: 'dashboard', 
     component: PagesComponent,
+    canActivate: [AuthGuard],
     children: [
       { path: '', component: DashboardComponent, data : { titulo : 'dashboard' } },
       { path: 'cargarinsumopcb', component: CargarinsumopcbComponent, data : { titulo : 'cargarinsumopcb' } },
